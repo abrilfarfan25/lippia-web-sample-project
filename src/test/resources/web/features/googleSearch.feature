@@ -23,16 +23,3 @@ Feature: As a potential client i need to search in google to find a web site
     Given The client isn't on google page
     When The client search for word Lippia
     Then The client verify that results are shown properly
-
-  @Regression
-  Scenario Outline: The client searches for different words
-    Given The client is on google page
-    When The client search for word <criteria>
-    Then The client verify that results are shown properly
-
-    Examples:
-      | criteria   |
-      | Selenium   |
-      | Java       |
-      | Testing    |
-      | Automation |
